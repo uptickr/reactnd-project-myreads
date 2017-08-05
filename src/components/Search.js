@@ -12,7 +12,7 @@ class Search extends React.Component {
 
   updateResults = (searchResults) => {
     const booksInLibrary = this.props.books.map(b => b.id)
-    searchResults.map(book => {
+    searchResults.forEach(book => {
       booksInLibrary.includes(book.id) && (
         book.shelf = this.props.books.filter(b => b.id === book.id)[0].shelf
       )

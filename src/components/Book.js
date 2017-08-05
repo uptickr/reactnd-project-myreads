@@ -3,7 +3,7 @@ import '../App.css'
 
 class Book extends React.Component {
   render() {
-    let { id, title, shelf, authors, imageLinks } = this.props.bookObj
+    let { title, shelf, authors, imageLinks } = this.props.bookObj
     let thumbnail = imageLinks === undefined ? "" : imageLinks.thumbnail
     authors = authors || []
 
